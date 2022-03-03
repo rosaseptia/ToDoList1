@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		7B3E15E627CF1F0300671590 /* ToDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3E15E527CF1F0300671590 /* ToDoListApp.swift */; };
-		7B3E15E827CF1F0300671590 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3E15E727CF1F0300671590 /* ContentView.swift */; };
 		7B3E15EA27CF1F0400671590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B3E15E927CF1F0400671590 /* Assets.xcassets */; };
 		7B3E15ED27CF1F0400671590 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B3E15EC27CF1F0400671590 /* Preview Assets.xcassets */; };
 		7B3E15F727CF1F0500671590 /* ToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3E15F627CF1F0500671590 /* ToDoListTests.swift */; };
 		7B3E160127CF1F0500671590 /* ToDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3E160027CF1F0500671590 /* ToDoListUITests.swift */; };
 		7B3E160327CF1F0500671590 /* ToDoListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3E160227CF1F0500671590 /* ToDoListUITestsLaunchTests.swift */; };
+		7B3E161127CF22E900671590 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3E161027CF22E900671590 /* ListView.swift */; };
+		7B3E161327CF246600671590 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3E161227CF246600671590 /* ListRowView.swift */; };
+		7B3E161527CF26F600671590 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3E161427CF26F600671590 /* AddView.swift */; };
+		7B3E161927CF2D6500671590 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3E161827CF2D6500671590 /* ItemModel.swift */; };
+		7B3E161C27CF33CE00671590 /* ListVewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3E161B27CF33CE00671590 /* ListVewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 /* Begin PBXFileReference section */
 		7B3E15E227CF1F0300671590 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B3E15E527CF1F0300671590 /* ToDoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListApp.swift; sourceTree = "<group>"; };
-		7B3E15E727CF1F0300671590 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7B3E15E927CF1F0400671590 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B3E15EC27CF1F0400671590 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7B3E15F227CF1F0500671590 /* ToDoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,11 @@
 		7B3E15FC27CF1F0500671590 /* ToDoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B3E160027CF1F0500671590 /* ToDoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITests.swift; sourceTree = "<group>"; };
 		7B3E160227CF1F0500671590 /* ToDoListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7B3E161027CF22E900671590 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		7B3E161227CF246600671590 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		7B3E161427CF26F600671590 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		7B3E161827CF2D6500671590 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		7B3E161B27CF33CE00671590 /* ListVewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +103,9 @@
 			isa = PBXGroup;
 			children = (
 				7B3E15E527CF1F0300671590 /* ToDoListApp.swift */,
-				7B3E15E727CF1F0300671590 /* ContentView.swift */,
+				7B3E161A27CF338100671590 /* ViewModels */,
+				7B3E161727CF2D3100671590 /* Models */,
+				7B3E160F27CF228100671590 /* Views */,
 				7B3E15E927CF1F0400671590 /* Assets.xcassets */,
 				7B3E15EB27CF1F0400671590 /* Preview Content */,
 			);
@@ -125,6 +135,32 @@
 				7B3E160227CF1F0500671590 /* ToDoListUITestsLaunchTests.swift */,
 			);
 			path = ToDoListUITests;
+			sourceTree = "<group>";
+		};
+		7B3E160F27CF228100671590 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7B3E161027CF22E900671590 /* ListView.swift */,
+				7B3E161227CF246600671590 /* ListRowView.swift */,
+				7B3E161427CF26F600671590 /* AddView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7B3E161727CF2D3100671590 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7B3E161827CF2D6500671590 /* ItemModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7B3E161A27CF338100671590 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7B3E161B27CF33CE00671590 /* ListVewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B3E15E827CF1F0300671590 /* ContentView.swift in Sources */,
+				7B3E161C27CF33CE00671590 /* ListVewModel.swift in Sources */,
+				7B3E161927CF2D6500671590 /* ItemModel.swift in Sources */,
+				7B3E161527CF26F600671590 /* AddView.swift in Sources */,
 				7B3E15E627CF1F0300671590 /* ToDoListApp.swift in Sources */,
+				7B3E161127CF22E900671590 /* ListView.swift in Sources */,
+				7B3E161327CF246600671590 /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
