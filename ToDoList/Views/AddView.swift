@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct AddView: View {
-     
+    @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var listViewModel : ListViewModel
     @State var textFieldText: String = ""
+    
+    @State var alertTitle: String = ""
+    @State var showAlert: Bool = false
+    
     var body: some View {
         ScrollView{
             VStack{
@@ -32,11 +36,27 @@ struct AddView: View {
             
         }
         .navigationTitle("Add an Item ✒️")
+        .alert(isPresented: $showAlert, content: getAlert)
         
         
     }
     func saveButtenPressed() {
-        listViewModel.addItem(title: textFieldText)
+        if textIsAppropriate() == true{
+            listViewModel.addItem(title: textFieldText)
+            presentationMode.wrappedValue.dismiss()
+        }
+        
+    }
+    func textIsAppropriate() -> Bool {
+        if textFieldText.count < 3 {
+            alertTitle = "your new to do item must be at least 3 characters long!! 😰"
+            showAlert.toggle()
+            return false
+        }
+        return true
+    }
+    func getAlert() -> Alert {
+        return Alert(title: Text(alertTitle))
     }
 }
 
